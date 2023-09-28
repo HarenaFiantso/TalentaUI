@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ProfileAvatar from "../../assets/profile.jpg";
 import "./Navbar.scss";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   /* Hooks for the scrolling effect */
@@ -27,8 +27,11 @@ export default function Navbar() {
   /* Hook for the clicking event on the method above */
   const [open, setOpen] = useState(false);
 
+  /* Called to fix the navbar scrolling effect in a another page than the home page */
+  const { pathname } = useLocation();
+
   return (
-    <div className={active ? "navbar active" : "navbar"}>
+    <div className={active || pathname !== "/" ? "navbar active" : "navbar"}>
       <div className="container">
         <Link to="/">
           <div className="logo">
@@ -76,14 +79,14 @@ export default function Navbar() {
           )}
         </div>
       </div>
-      {active && (
+      {(active || pathname !== "/") && (
         <>
           <hr />
           <div className="menu">
-            <span>Graphic design</span>
-            <span>Videography</span>
-            <span>Developer</span>
-            <span>Photography</span>
+            <Link to="/">Graphic design</Link>
+            <Link to="/">Videography</Link>
+            <Link to="/">Developer</Link>
+            <Link to="/">Photography</Link>
           </div>
         </>
       )}
