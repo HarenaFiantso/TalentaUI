@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import ProfileAvatar from "../../assets/profile.jpg";
 import "./Navbar.scss";
 
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   /* Hooks for the scrolling effect */
   const [active, setActive] = useState(false);
@@ -28,10 +30,12 @@ export default function Navbar() {
   return (
     <div className={active ? "navbar active" : "navbar"}>
       <div className="container">
-        <div className="logo">
-          <span className="text">Talenta</span>
-          <span className="domain">.mg</span>
-        </div>
+        <Link to="/">
+          <div className="logo">
+            <span className="text">Talenta</span>
+            <span className="domain">.mg</span>
+          </div>
+        </Link>
         <div className="links">
           <span>Talenta business</span>
           <span>Explore</span>
@@ -49,13 +53,23 @@ export default function Navbar() {
                 <div className="options">
                   {currentUser?.isSeller && (
                     <>
-                      <span>Gigs</span>
-                      <span>Add new gig</span>
+                      <Link className="link" to="/mygigs">
+                        Gigs
+                      </Link>
+                      <Link className="link" to="/add">
+                        Add new gig
+                      </Link>
                     </>
                   )}
-                  <span>Orders</span>
-                  <span>Messages</span>
-                  <span>Log Out</span>
+                  <Link className="link" to="/orders">
+                    Orders
+                  </Link>
+                  <Link className="link" to="/messages">
+                    Messages
+                  </Link>
+                  <Link className="link" to="/">
+                    Log Out
+                  </Link>
                 </div>
               )}
             </div>
