@@ -9,6 +9,7 @@
     width: 1080px;
     display: flex;
     align-items: center;
+    gap: 20px;
 
     .left {
       display: flex;
@@ -20,8 +21,8 @@
         font-weight: 800;
 
         span {
-          color: #6e57e0;
-          text-shadow: #6e57e0;
+          color: #62e2f6;
+          text-shadow: #62e2f6;
         }
       }
 
@@ -55,8 +56,9 @@
           width: 120px;
           height: 40px;
           border: none;
-          background-color: #6e57e0;
-          color: white;
+          background-color: #62e2f6;
+          color: black;
+          font-weight: 600;
           cursor: pointer;
           border-radius: 0 5px 5px 0;
         }
@@ -78,10 +80,18 @@
           padding: 5px 10px;
           border-radius: 20px;
           font-size: 12px;
+          cursor: pointer;
         }
       }
     }
 
-    .right {}
+    .right {
+      height: 100%;
+
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+    }
   }
 }
