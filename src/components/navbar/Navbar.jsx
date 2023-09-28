@@ -3,6 +3,7 @@ import ProfileAvatar from "../../assets/profile.jpg";
 import "./Navbar.scss";
 
 import { Link, useLocation } from "react-router-dom";
+import LanguagePic from "../../assets/language.png";
 
 export default function Navbar() {
   /* Hooks for the scrolling effect */
@@ -42,7 +43,9 @@ export default function Navbar() {
         <div className="links">
           <span>Talenta business</span>
           <span>Explore</span>
-          <span>English</span>
+          <span>
+            <img src={LanguagePic} alt="globe" className="icon"/>
+          </span>
 
           {/* The implementation of the method method */}
           {!currentUser?.isSeller && <span>Sign in</span>}
@@ -50,7 +53,7 @@ export default function Navbar() {
           {!currentUser && <button>Join</button>}
           {currentUser && (
             <div className="user" onClick={() => setOpen(!open)}>
-              <img src={ProfileAvatar} alt="avatar" />
+              <img src={ProfileAvatar} alt="avatar" className="avatar"/>
               <span>{currentUser?.username}</span>
               {open && (
                 <div className="options">
