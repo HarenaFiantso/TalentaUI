@@ -54,7 +54,7 @@ export default function Navbar() {
                   )}
                   <span>Orders</span>
                   <span>Messages</span>
-                  <span>LogOut</span>
+                  <span>Log Out</span>
                 </div>
               )}
             </div>
