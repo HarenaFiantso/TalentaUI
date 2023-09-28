@@ -3,6 +3,9 @@
   flex-direction: column;
   background-color: var(--body-color);
   align-items: center;
+  position: sticky;
+  top: 0;
+  transition: .2s all ease;
 
   &.active {
     background-color: white;
