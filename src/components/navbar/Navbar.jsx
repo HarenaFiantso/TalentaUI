@@ -35,9 +35,10 @@ export default function Navbar() {
         <div className="links">
           <span>Talenta business</span>
           <span>Explore</span>
-          <span>Sign in</span>
+          <span>English</span>
 
           {/* The implementation of the method method */}
+          {!currentUser?.isSeller && <span>Sign in</span>}
           {!currentUser?.isSeller && <span>Become a seller</span>}
           {!currentUser && <button>Join</button>}
           {currentUser && (
