@@ -19,13 +19,13 @@
     padding: 20px 0;
 
     .logo {
-      color: var(--title-color);
+      color: black;
       font-size: 20px;
       font-weight: 800;
       cursor: pointer;
 
       .domain {
-        color: var(--first-color);
+        color: #6e57e0;
       }
     }
 
@@ -34,7 +34,36 @@
       gap: 20px;
       align-items: center;
       font-weight: 500;
-      color: white;
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+        position: relative;
+        
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .options {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          padding: 20px;
+          background-color: white;
+          border-radius: 10px;
+          border: 1px solid lightgrey;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 200px;
+          font-weight: 300;
+        }
+      }
 
       span {
         font-size: 14px;
@@ -44,15 +73,18 @@
       button {
         padding: .5rem 1.5rem;
         cursor: pointer;
-        background-color: var(--first-color);
+        background-color: #6e57e0;
         color: white;
+        font-weight: 900;
         font-family: "Poppins";
-        border-radius: .5rem;
-        border: 2px solid #6e57e096;
+        border-radius: 5px;
+        border: 2px solid #6e57e0;
+        box-shadow: 0 5px 10px #6e57e08a;
         transition: .2s all ease;
 
         &:hover {
           background-color: transparent;
+          color: black;
         }
       }
     }

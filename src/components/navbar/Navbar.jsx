@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import ProfileAvatar from "../../assets/profile.jpg";
 import "./Navbar.scss";
 
 export default function Navbar() {
+  /* Hooks for the scrolling effect */
   const [active, setActive] = useState(false);
   const isActive = () => {
     window.scrollY > 0 ? setActive(true) : setActive(false);
@@ -12,6 +14,16 @@ export default function Navbar() {
       window.removeEventListener("scroll", isActive);
     };
   });
+
+  /* A method for switching guest user into connected user */
+  const currentUser = {
+    id: 1,
+    username: "Fiantso Harena",
+    isSeller: true,
+  };
+
+  /* Hook for the clicking event on the method above */
+  const [open, setOpen] = useState(false);
 
   return (
     <div className={active ? "navbar active" : "navbar"}>
@@ -24,8 +36,29 @@ export default function Navbar() {
           <span>Talenta business</span>
           <span>Explore</span>
           <span>Sign in</span>
-          <span>Become a seller</span>
-          <button>Join</button>
+
+          {/* The implementation of the method method */}
+          {!currentUser?.isSeller && <span>Become a seller</span>}
+          {!currentUser && <button>Join</button>}
+          {currentUser && (
+            <div className="user" onClick={() => setOpen(!open)}>
+              <img src={ProfileAvatar} alt="avatar" />
+              <span>{currentUser?.username}</span>
+              {open && (
+                <div className="options">
+                  {currentUser?.isSeller && (
+                    <>
+                      <span>Gigs</span>
+                      <span>Add new gig</span>
+                    </>
+                  )}
+                  <span>Orders</span>
+                  <span>Messages</span>
+                  <span>LogOut</span>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </div>
       {active && (
