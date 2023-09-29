@@ -6,11 +6,12 @@ import "./Home.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { cards } from "../../StaticData";
+import { cards, projects } from "../../StaticData";
 import featuresOne from "../../assets/1.webp";
 import featuresTwo from "../../assets/4.webp";
 import check from "../../assets/greencheck.png";
 import { Button } from "@mui/material";
+import ProjectCard from "../../components/projectCard/ProjectCard";
 
 export default function Home() {
   /* Data aos initilization */
@@ -30,7 +31,7 @@ export default function Home() {
       {/* Features part 1 */}
       <div className="features">
         <div className="container">
-          <div className="left" data-aos="fade-down">
+          <div className="left">
             <h1>
               A whole word of <span>freelance talent</span> <br /> at your
               fingertips
@@ -68,7 +69,7 @@ export default function Home() {
               just project-based pricing
             </p>
           </div>
-          <div className="right" data-aos="fade-down">
+          <div className="right">
             <img src={featuresOne} alt="A random image" />
           </div>
         </div>
@@ -76,11 +77,14 @@ export default function Home() {
       {/* Features part 2 */}
       <div className="features dark">
         <div className="container">
-          <div className="right" data-aos="fade-down">
+          <div className="right">
             <img src={featuresTwo} alt="A random image" />
           </div>
-          <div className="left" data-aos="fade-down">
-            <h1><span>Talenta business,</span> <br />A business solution designed for teams</h1>
+          <div className="left">
+            <h1>
+              <span>Talenta business,</span> <br />A business solution designed
+              for teams
+            </h1>
             <p>
               Upgrade to a curated experience packed with toold and benefits,
               dedicated to businesses
@@ -102,9 +106,9 @@ export default function Home() {
         </div>
       </div>
 
-      <Slide slidesToShow={4} arrowsScroll={4}>
-        {cards.map((card) => (
-          <CategoryCard item={card} key={card.id} />
+      <Slide slidesToShow={3} arrowsScroll={3}>
+        {projects.map((project) => (
+          <ProjectCard item={project} key={project.id} />
         ))}
       </Slide>
     </div>

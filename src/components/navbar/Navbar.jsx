@@ -41,8 +41,8 @@ export default function Navbar() {
           </div>
         </Link>
         <div className="links">
-          <span>Talenta business</span>
-          <span>Explore</span>
+          <Link>Talenta business</Link>
+          <Link>Explore</Link>
           <span>
             <img src={LanguagePic} alt="globe" className="icon"/>
           </span>

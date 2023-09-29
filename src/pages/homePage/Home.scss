@@ -20,6 +20,11 @@
         margin-top: 20px;
         text-transform: none !important;
         width: max-content;
+        transition: .5s all ease;
+
+        &:hover {
+          background-color: #a0264b;
+        }
       }
     }
 
