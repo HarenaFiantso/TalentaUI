@@ -88,8 +88,12 @@ export default function Navbar() {
           <div className="menu">
             <Link to="/">Graphic design</Link>
             <Link to="/">Videography</Link>
-            <Link to="/">Developer</Link>
+            <Link to="/">Web development</Link>
             <Link to="/">Photography</Link>
+            <Link to="/">Architecture</Link>
+            <Link to="/">AI services</Link>
+            <Link to="/">Art & design</Link>
+            <Link to="/">3D design</Link>
           </div>
         </>
       )}
