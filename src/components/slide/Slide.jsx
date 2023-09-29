@@ -2,41 +2,12 @@ import React from "react";
 import Slider from "infinite-react-carousel";
 import "./Slide.scss";
 
-export default function Slide() {
+export default function Slide({ children, slidesToShow, arrowsScroll }) {
   return (
     <div className="slide">
       <div className="container">
-        <Slider>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>1</h3>
-          </div>
+        <Slider slidesToShow={slidesToShow} arrowsScroll={arrowsScroll}>
+          {children}
         </Slider>
       </div>
     </div>
