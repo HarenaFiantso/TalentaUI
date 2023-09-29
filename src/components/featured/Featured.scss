@@ -24,6 +24,7 @@
         span {
           color: #62e2f6;
           text-shadow: 0 8px 50px #62e2f6;
+          text-transform: capitalize;
         }
       }
 
@@ -32,7 +33,7 @@
         align-items: center;
         justify-content: space-between;
         background-color: #fff;
-        border-radius: 0 10px 10px 0;
+        border-radius: 10px;
         height: 40px;
         width: 80%;
 
@@ -50,7 +51,7 @@
           input {
             border: none;
             outline: none;
-            color: rgb(75, 75, 75);
+            color: rgb(31, 31, 31);
           }
         }
 
