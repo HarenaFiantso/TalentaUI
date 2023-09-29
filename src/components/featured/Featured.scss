@@ -2,7 +2,7 @@
   height: 600px;
   display: flex;
   justify-content: center;
-  background-color: #0e1127;
+  background: linear-gradient(#0e1127, #1c304b);
   color: white;
 
   .container {
@@ -14,10 +14,11 @@
     .left {
       display: flex;
       flex-direction: column;
+      flex: 5;
       gap: 30px;
 
       .text {
-        font-size: 40px;
+        font-size: 50px;
         font-weight: 800;
 
         span {
@@ -34,7 +35,7 @@
         background-color: #fff;
         border-radius: 10px;
         height: 40px;
-        width: 80%;
+        width: 50%;
 
         .searchInput {
           display: flex;
