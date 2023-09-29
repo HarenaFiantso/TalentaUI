@@ -4,6 +4,7 @@
   justify-content: center;
   background-color: #0e1127;
   color: white;
+  padding: 50px;
 
   .container {
     width: 1080px;
@@ -22,7 +23,7 @@
 
         span {
           color: #62e2f6;
-          text-shadow: #62e2f6;
+          text-shadow: 0 8px 50px #62e2f6;
         }
       }
 
@@ -31,8 +32,9 @@
         align-items: center;
         justify-content: space-between;
         background-color: #fff;
-        border-radius: 5px;
+        border-radius: 0 10px 10px 0;
         height: 40px;
+        width: 80%;
 
         .searchInput {
           display: flex;
@@ -56,14 +58,16 @@
           width: 120px;
           height: 40px;
           border: none;
-          background-color: #074b55;
-          color: white;
+          background-color: #41a6b6;
+          color: black;
           font-weight: 600;
+          padding: 0 60px;
           cursor: pointer;
           transition: .5s all ease;
 
           &:hover {
-            background-color: #04333a;
+            background-color: #2b6b75;
+            color: white;
           }
         }
       }
@@ -93,6 +97,7 @@
       height: 100%;
 
       img {
+        width: 120%;
         height: 100%;
         object-fit: contain;
       }
