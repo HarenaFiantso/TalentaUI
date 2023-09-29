@@ -7,8 +7,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { cards } from "../../StaticData";
-import nightView from "../../assets/1.webp";
+import featuresOne from "../../assets/1.webp";
+import featuresTwo from "../../assets/4.webp";
 import check from "../../assets/greencheck.png";
+import { Button } from "@mui/material";
 
 export default function Home() {
   /* Data aos initilization */
@@ -24,6 +26,8 @@ export default function Home() {
           <CategoryCard item={card} key={card.id} />
         ))}
       </Slide>
+
+      {/* Features part 1 */}
       <div className="features">
         <div className="container">
           <div className="left" data-aos="fade-down">
@@ -65,10 +69,44 @@ export default function Home() {
             </p>
           </div>
           <div className="right" data-aos="fade-down">
-            <img src={nightView} alt="A random image" />
+            <img src={featuresOne} alt="A random image" />
           </div>
         </div>
       </div>
+      {/* Features part 2 */}
+      <div className="features dark">
+        <div className="container">
+          <div className="right" data-aos="fade-down">
+            <img src={featuresTwo} alt="A random image" />
+          </div>
+          <div className="left" data-aos="fade-down">
+            <h1><span>Talenta business,</span> <br />A business solution designed for teams</h1>
+            <p>
+              Upgrade to a curated experience packed with toold and benefits,
+              dedicated to businesses
+            </p>
+            <div className="title">
+              <img src={check} alt="check icon" />
+              Connect to freelancers with proven business experience
+            </div>
+            <div className="title">
+              <img src={check} alt="check icon" />
+              Get matched with the perfect talent by a customer success manager
+            </div>
+            <div className="title">
+              <img src={check} alt="check icon" />
+              Manage teamwork and boost productivity with one powerful workspace
+            </div>
+            <Button>Explore Talenta Business</Button>
+          </div>
+        </div>
+      </div>
+
+      <Slide slidesToShow={4} arrowsScroll={4}>
+        {cards.map((card) => (
+          <CategoryCard item={card} key={card.id} />
+        ))}
+      </Slide>
     </div>
   );
 }
