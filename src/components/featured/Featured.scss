@@ -59,16 +59,15 @@
           width: 120px;
           height: 40px;
           border: none;
-          background-color: #41a6b6;
-          color: black;
+          background-color: #e32f64;
+          color: white;
           font-weight: 600;
           padding: 0 60px;
           cursor: pointer;
           transition: .5s all ease;
 
           &:hover {
-            background-color: #2b6b75;
-            color: white;
+            background-color: #a0264b;
           }
         }
       }
