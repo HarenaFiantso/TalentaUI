@@ -7,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { cards } from "../../StaticData";
-import nightView from "../../assets/night.jpg";
+import nightView from "../../assets/1.webp";
 import check from "../../assets/greencheck.png";
 
 export default function Home() {
