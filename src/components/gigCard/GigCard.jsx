@@ -21,10 +21,13 @@ export default function GigCard({ item }) {
             <span>{item.star}</span>
           </div>
         </div>
+        <hr />
         <div className="details">
           <img src={heart} alt="heart" />
-          <span>Starting at</span>
-          <h2>{item.price}</h2>
+          <div className="price">
+            <span>Starting at</span>
+            <h2>{item.price}</h2>
+          </div>
         </div>
       </div>
     </Link>
