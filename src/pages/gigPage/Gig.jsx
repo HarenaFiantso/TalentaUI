@@ -5,12 +5,16 @@ import profileAvatar from "../../assets/noavatar.jpg";
 import star from "../../assets/star.png";
 import like from "../../assets/like.png";
 import dislike from "../../assets/dislike.png";
+import favicon from "../../assets/favicon.ico";
 import { Slider } from "infinite-react-carousel";
 
 import imageOne from "../../assets/gig/BURGER-MENU3.jpeg";
 import imageTwo from "../../assets/gig/HOME-RESP_BANNER.jpeg";
 import imageThree from "../../assets/gig/MENU-BANNER.jpg";
 import imageFour from "../../assets/gig/PIZZA-MENU3.jpg";
+import clock from "../../assets/clock.png";
+import recycle from "../../assets/recycle.png";
+import check from "../../assets/greencheck.png";
 import { Button } from "@mui/material";
 
 export default function Gig() {
@@ -93,14 +97,10 @@ export default function Gig() {
                 </div>
               </div>
               <hr />
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
-                voluptate possimus nihil, inventore, error ullam odit veritatis
-                aspernatur libero nesciunt earum qui architecto velit totam ab?
-                Praesentium blanditiis ad aperiam.
-              </p>
+              <p>Lorem, ipsum.</p>
             </div>
           </div>
+
           <div className="reviews">
             <h2>Reviews</h2>
             <div className="item">
@@ -109,115 +109,7 @@ export default function Gig() {
                 <div className="info">
                   <span>Harena Fiantso</span>
                   <div className="country">
-                    <img src="" alt="Country flag" />
-                    <span>Madagascar</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="stars">
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <span>5</span>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Pariatur, nostrum veritatis. Magni aspernatur maxime quasi
-                ullam? Aliquam omnis blanditiis tempore modi neque accusamus,
-                quae maxime quaerat nemo id facere ducimus!
-              </p>
-              <div className="helpful">
-                <span>Helpful?</span>
-                <img src={like} alt="dislike" />
-                <span>Yes</span>
-                <img src={dislike} alt="like" />
-                <span>No</span>
-              </div>
-            </div>
-            <hr />
-
-            <div className="item">
-              <div className="user">
-                <img src={profileAvatar} alt="profile pic" />
-                <div className="info">
-                  <span>Harena Fiantso</span>
-                  <div className="country">
-                    <img src="" alt="Country flag" />
-                    <span>Madagascar</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="stars">
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <span>5</span>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Pariatur, nostrum veritatis. Magni aspernatur maxime quasi
-                ullam? Aliquam omnis blanditiis tempore modi neque accusamus,
-                quae maxime quaerat nemo id facere ducimus!
-              </p>
-              <div className="helpful">
-                <span>Helpful?</span>
-                <img src={like} alt="dislike" />
-                <span>Yes</span>
-                <img src={dislike} alt="like" />
-                <span>No</span>
-              </div>
-            </div>
-            <hr />
-
-            <div className="item">
-              <div className="user">
-                <img src={profileAvatar} alt="profile pic" />
-                <div className="info">
-                  <span>Harena Fiantso</span>
-                  <div className="country">
-                    <img src="" alt="Country flag" />
-                    <span>Madagascar</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="stars">
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <span>5</span>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Pariatur, nostrum veritatis. Magni aspernatur maxime quasi
-                ullam? Aliquam omnis blanditiis tempore modi neque accusamus,
-                quae maxime quaerat nemo id facere ducimus!
-              </p>
-              <div className="helpful">
-                <span>Helpful?</span>
-                <img src={like} alt="dislike" />
-                <span>Yes</span>
-                <img src={dislike} alt="like" />
-                <span>No</span>
-              </div>
-            </div>
-            <hr />
-
-            <div className="item">
-              <div className="user">
-                <img src={profileAvatar} alt="profile pic" />
-                <div className="info">
-                  <span>Harena Fiantso</span>
-                  <div className="country">
-                    <img src="" alt="Country flag" />
+                    <img src={favicon} alt="Country flag" />
                     <span>Madagascar</span>
                   </div>
                 </div>
@@ -248,7 +140,41 @@ export default function Gig() {
             <hr />
           </div>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div className="price">
+            <h3>1 AI generated image</h3>
+            <h2>Ar 12.000ar</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, sit.
+          </p>
+          <div className="details">
+            <div className="item">
+              <img src={clock} alt="Clock" />
+              <span>2 days Delivery</span>
+            </div>
+            <div className="item">
+              <img src={recycle} alt="Recycle" />
+              <span>3 Revisions</span>
+            </div>
+          </div>
+
+          <div className="features">
+            <div className="item">
+              <img src={check} alt="check" />
+              <span>Lorem, ipsum.</span>
+            </div>
+            <div className="item">
+              <img src={check} alt="check" />
+              <span>Lorem, ipsum.</span>
+            </div>
+            <div className="item">
+              <img src={check} alt="check" />
+              <span>Lorem, ipsum.</span>
+            </div>
+          </div>
+          <Button>Continue</Button>
+        </div>
       </div>
     </div>
   );
