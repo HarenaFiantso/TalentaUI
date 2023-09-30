@@ -183,22 +183,4 @@ export const gigs = [
     star: 4,
     username: "Walton Shepard ",
   },
-  {
-    id: 7,
-    img: projectSeven,
-    pp: profilePic,
-    desc: "I will generate images with your prompts using ai dalle",
-    price: 89,
-    star: 5,
-    username: "Waverly Schaefer",
-  },
-  {
-    id: 8,
-    img: projectEight,
-    pp: profilePic ,
-    desc: "I will create custom art using midjourney generator",
-    price: 110,
-    star: 4,
-    username: "Wilton Hunt",
-  },
 ];

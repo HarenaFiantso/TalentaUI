@@ -2,12 +2,12 @@ import React from "react";
 import "./GigCard.scss";
 
 import { Link } from "react-router-dom";
-import star from "../../assets/start.png";
+import star from "../../assets/star.png";
 import heart from "../../assets/heart.png";
 
 export default function GigCard({ item }) {
   return (
-    <Link to="/gig/1">
+    <Link to="/gig/1" className="link">
       <div className="gigCard">
         <img src={item.img} alt="Image item" />
         <div className="info">
@@ -26,7 +26,7 @@ export default function GigCard({ item }) {
           <img src={heart} alt="heart" />
           <div className="price">
             <span>Starting at</span>
-            <h2>{item.price}</h2>
+            <h2>Ar {item.price}</h2>
           </div>
         </div>
       </div>
