@@ -4,6 +4,7 @@ import GigCard from "../../components/gigCard/GigCard"
 
 import arrowDown from "../../assets/down.png";
 import { gigs } from "../../StaticData";
+import { Button } from "@mui/material";
 
 export default function Gigs() {
   /* Dropdown menu */
@@ -29,7 +30,7 @@ export default function Gigs() {
             <span>Budged</span>
             <input type="text" placeholder="minimum" />
             <input type="text" placeholder="maximum" />
-            <button>Apply</button>
+            <Button>Apply</Button>
           </div>
           <div className="right">
             <span className="sortBy">Sort By</span>
