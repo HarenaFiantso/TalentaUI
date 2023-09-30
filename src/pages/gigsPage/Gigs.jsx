@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Gigs.scss";
-import GigCard from "../../components/gigCard/GigCard"
+import GigCard from "../../components/gigCard/GigCard";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import arrowDown from "../../assets/down.png";
 import { gigs } from "../../StaticData";
@@ -16,6 +18,11 @@ export default function Gigs() {
     setSort(type);
     setOpen(false);
   };
+
+  /* Data aos initilization */
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <div className="gigs">
@@ -53,7 +60,7 @@ export default function Gigs() {
             )}
           </div>
         </div>
-        <div className="cards">
+        <div className="cards" data-aos="fade-down">
           {gigs.map((gig) => (
             <GigCard key={gig.id} item={gig} />
           ))}
