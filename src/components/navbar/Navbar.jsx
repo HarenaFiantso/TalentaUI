@@ -4,6 +4,7 @@ import "./Navbar.scss";
 
 import { Link, useLocation } from "react-router-dom";
 import LanguagePic from "../../assets/language.png";
+import { Button } from "@mui/material";
 
 export default function Navbar() {
   /* Hooks for the scrolling effect */
@@ -50,8 +51,8 @@ export default function Navbar() {
           {/* The implementation of the method method */}
           {!currentUser?.isSeller && <span>Sign in</span>}
           {!currentUser?.isSeller && <span>Become a seller</span>}
-          {!currentUser && <button>Join</button>}
-          {currentUser && (
+          {!currentUser?.isSeller && <Button>Join</Button>}
+          {currentUser?.isSeller && (
             <div className="user" onClick={() => setOpen(!open)}>
               <img src={ProfileAvatar} alt="avatar" className="avatar"/>
               <span>{currentUser?.username}</span>
