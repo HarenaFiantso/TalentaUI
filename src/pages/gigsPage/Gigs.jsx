@@ -9,12 +9,7 @@ export default function Gigs() {
       <div className="container">
         <span className="breadcrumbs">Talenta | Graphic & design |</span>
         <h1>AI Artist</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-          repellendus explicabo porro numquam magni suscipit repellat dolores
-          aliquid, perspiciatis eos laudantium, sit illo blanditiis minima
-          necessitatibus optio nulla quos laboriosam.
-        </p>
+        <p>Explore the boundary of art and technologies with Talenta's AI Artist</p>
         <div className="menu">
           <div className="left">
             <span>Budged</span>
