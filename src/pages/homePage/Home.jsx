@@ -33,7 +33,7 @@ export default function Home() {
         <div className="container">
           <div className="left">
             <h1>
-              A whole word of <span>freelance talent</span> <br /> at your
+              A whole word of <span> wonderful talent</span> <br /> at your
               fingertips
             </h1>
             <div className="title">
@@ -41,32 +41,32 @@ export default function Home() {
               The best for every budget
             </div>
             <p>
-              Find high quality services at every price point. No hourly rates,
-              just project-based pricing
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              quas quia, vitae sunt ipsum vel!
             </p>
             <div className="title">
               <img src={check} alt="check icon" />
               Quality work down quickly
             </div>
             <p>
-              Find the right freelancer to begin working on your project within
-              a minutes
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              quas quia, vitae sunt ipsum vel!
             </p>
             <div className="title">
               <img src={check} alt="check icon" />
               Protected payments, every time
             </div>
             <p>
-              Always know what you'll pay upfront. Your payment isn't released
-              until you approve to work
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              quas quia, vitae sunt ipsum vel!
             </p>
             <div className="title">
               <img src={check} alt="check icon" />
               24/7 support
             </div>
             <p>
-              Find high quality services at every price point. No hourly rates,
-              just project-based pricing
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              quas quia, vitae sunt ipsum vel!
             </p>
           </div>
           <div className="right">
@@ -86,12 +86,12 @@ export default function Home() {
               for teams
             </h1>
             <p>
-              Upgrade to a curated experience packed with toold and benefits,
-              dedicated to businesses
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              quas quia, vitae sunt ipsum vel!
             </p>
             <div className="title">
               <img src={check} alt="check icon" />
-              Connect to freelancers with proven business experience
+              Connect to talents with proven business experience
             </div>
             <div className="title">
               <img src={check} alt="check icon" />

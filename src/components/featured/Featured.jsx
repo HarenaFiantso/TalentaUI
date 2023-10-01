@@ -16,7 +16,7 @@ export default function Featured() {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["freelance services"],
+      strings: ["perfect services"],
       typeSpeed: 50,
     });
     return () => {
@@ -34,14 +34,14 @@ export default function Featured() {
       <div className="container">
         <div className="left" data-aos="fade-down">
           <span className="text">
-            Find the perfect
+            Find the
             <br /> <span ref={el}></span>
             <br /> for your business.
           </span>
           <div className="search">
             <div className="searchInput">
               <img src={searchIcon} alt="search Icon" />
-              <input type="text" placeholder="Try building mobile app" />
+              <input type="text" placeholder="Search something..." />
             </div>
             <Button
               sx={{

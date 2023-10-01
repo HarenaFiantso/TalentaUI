@@ -5,7 +5,7 @@ import profileAvatar from "../../assets/noavatar.jpg";
 import star from "../../assets/star.png";
 import like from "../../assets/like.png";
 import dislike from "../../assets/dislike.png";
-import favicon from "../../assets/favicon.ico";
+import favicon from "../../assets/message.png";
 import { Slider } from "infinite-react-carousel";
 
 import imageOne from "../../assets/gig/BURGER-MENU3.jpeg";
@@ -22,8 +22,8 @@ export default function Gig() {
     <div className="gig">
       <div className="container">
         <div className="left">
-          <span className="breadcrumbs">TALENTA | GRAPHICS & DESIGN |</span>
-          <h1>I will create AI generated art for you</h1>
+          <span className="breadcrumbs">TALENTA | CATEGORY TITLE |</span>
+          <h1>A small title of the services</h1>
           <div className="user">
             <img src={profileAvatar} alt="Profile picture" />
             <span>Fiantso Harena</span>
@@ -81,7 +81,7 @@ export default function Gig() {
                 </div>
                 <div className="item">
                   <span className="title">Member since</span>
-                  <span className="desc">Aug 2022</span>
+                  <span className="desc">Sep 2023</span>
                 </div>
                 <div className="item">
                   <span className="title">Avg. response time</span>
@@ -142,7 +142,7 @@ export default function Gig() {
         </div>
         <div className="right">
           <div className="price">
-            <h3>1 AI generated image</h3>
+            <h3>Sakafo</h3>
             <h2>Ar 12.000ar</h2>
           </div>
           <p>

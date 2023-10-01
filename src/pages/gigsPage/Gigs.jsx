@@ -27,16 +27,17 @@ export default function Gigs() {
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">Talenta | Graphic & design |</span>
-        <h1>AI Artist</h1>
+        <span className="breadcrumbs">TALENTA | CATEGORY TITLE |</span>
+        <h1>Category title</h1>
         <p>
-          Explore the boundary of art and technologies with Talenta's AI Artist
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          quas quia, vitae sunt ipsum vel!
         </p>
         <div className="menu">
           <div className="left">
             <span>Budged</span>
-            <input type="text" placeholder="minimum" />
-            <input type="text" placeholder="maximum" />
+            <input type="text" placeholder="min" />
+            <input type="text" placeholder="max" />
             <Button>Apply</Button>
           </div>
           <div className="right">
